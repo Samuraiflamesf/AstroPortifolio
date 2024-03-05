@@ -1,0 +1,28 @@
+---
+import "../styles/global.css";
+---
+
+<a class="btn btn-circle" id="back-to-top" onclick="scrollToTop()">
+    <label class="swap swap-flip">
+        <!-- this hidden checkbox controls the state -->
+        <input type="checkbox" />
+        <div class="swap-on">🖕</div>
+        <div class="swap-off">👆</div>
+    </label>
+</a>
+
+<script>
+    const backToTopButton = document.getElementById(".back-to-top");
+
+    const backToTop = () => {
+        if (window.scrollY >= 100) {
+            backToTopButton.classList.add("show");
+        } else {
+            backToTopButton.classList.remove("show");
+        }
+    };
+
+    window.addEventListener("scroll", function () {
+        backToTop();
+    });
+</script>
