@@ -3,12 +3,12 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import TimeLineElement from "../components/cv/TimeLine.astro";
 ---
 
-<BaseLayout title="Resume" sideBarActiveItemID="cv">
+<BaseLayout title="Sobre Mim" sideBarActiveItemID="cv">
     <div class="mb-5">
         <div class="text-3xl w-full font-bold">Sobre Mim</div>
     </div>
 
-    <div class="mb-10 text-justify">
+    <div class="mb-4 text-justify">
         Prazer, Bernardo Nogueira, 22 anos, brasileiro, atua como Tecnólogo em
         Gestão de Sistema de Informação na Fundação Estatal Saúde da Família.
         Graduando em Licenciatura em Matemática pelo IFBA. Formado em Análise e
@@ -17,6 +17,23 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
         colegas e clientes, e estou animado para contribuir em projetos
         desafiadores.
     </div>
+    <div class="mb-5">
+        <div class="text-3xl w-full font-bold">Skills</div>
+    </div>
+
+    <ul class="list-disc md:columns-5 columns-2 mx-6 mt-0">
+        <li>Gestão Ágil</li>
+        <li>HTML & CSS</li>
+        <li>Bootstrap 5</li>
+        <li>JavaScript</li>
+        <li>MySQL</li>
+        <li>PHP</li>
+        <li>Laravel 10</li>
+        <li>Data Science</li>
+        <li>Power BI</li>
+        <li>Python & R</li>
+    </ul>
+<br>
 
     <div class="mb-5">
         <div class="text-3xl w-full font-bold">Formação Acadêmica</div>
@@ -101,92 +118,76 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
         <div class="text-3xl w-full font-bold">Certificados</div>
     </div>
 
-    <ul class="list-disc mx-6 mb-10 grid gap-2">
-      <li>
-        <a
-        href="https://drive.google.com/file/d/1gTA--uCNh-EhXrxokw1pD8ko_K3vDFfU/view?usp=share_link"
-        target="_blank">Redes de Computadores | FESF
-        </a
-        >
-      </li>
-       <li>
+    <ul class="list-disc mx-6 mb-8 grid gap-2">
+        <li>
+            <a
+                href="https://drive.google.com/file/d/1gTA--uCNh-EhXrxokw1pD8ko_K3vDFfU/view?usp=share_link"
+                target="_blank"
+                >Redes de Computadores | FESF
+            </a>
+        </li>
+        <li>
             <a
                 href="https://drive.google.com/file/d/1SNHqoa4QM9OhIaqL2zIEPsrM45EmA8te/view?usp=sharing"
-                target="_blank">HTML E CSS | B7Web
-                </a
-                >
+                target="_blank"
+                >HTML E CSS | B7Web
+            </a>
         </li>
         <li>
             <a
                 href="https://drive.google.com/file/d/1ar48iGFF9ngMekKI-mnX90x5oDTQAX8T/view?usp=share_link"
-                target="_blank">Javascript | B7Web
-                </a
-            >
+                target="_blank"
+                >Javascript | B7Web
+            </a>
         </li>
         <li>
             <a
                 href="https://drive.google.com/file/d/1KiEP9LKmuOW3_EhSBP-cuURY__x0bTBz/view?usp=sharing"
-                target="_blank">Bootstrap 4 | B7Web
-                </a
-            >
-          </li>
+                target="_blank"
+                >Bootstrap 4 | B7Web
+            </a>
+        </li>
         <li>
             <a
                 href="https://drive.google.com/file/d/1aurikr1Ka-rtoF4tyLcy_wvz9nu5shLP/view?usp=share_link"
-                target="_blank">Banco de Dados | B7Web
-                </a
-            >
+                target="_blank"
+                >Banco de Dados | B7Web
+            </a>
         </li>
         <li>
             <a
                 href="https://drive.google.com/file/d/1vteRAO9n6OVPIImDq0UqVI5FeYMWiSo3/view?usp=share_link"
-                target="_blank">Planejamento e Gestão de Projetos | Udemy
-                </a
-                >
-              </li>
-              <li>
-                   <a
-                       href="https://drive.google.com/file/d/1rHpA9meDYzWU52JO6YCKnkgCn2K8TU5s/view?usp=share_link"
-                       target="_blank">Power BI - Aprimoramento da Gestão | ENAP
-                       </a
-                   >
-               </li>
-              <li>
-                  <a
-                      href="https://drive.google.com/file/d/1rMBa5ra60dgrfmYIL4tMD_w9HQUldL19/view?usp=sharing"
-                      target="_blank">Latex | UFVJM</a
-                  >
-              </li>
-              <li>
-                <a
-                href="https://drive.google.com/file/d/1LEDGuXmuENzT3zoUI7k6GXZAOMNs2Sua/view?usp=share_link"
-                target="_blank">Python | Udemy
-                </a
+                target="_blank"
+                >Planejamento e Gestão de Projetos | Udemy
+            </a>
+        </li>
+        <li>
+            <a
+                href="https://drive.google.com/file/d/1rHpA9meDYzWU52JO6YCKnkgCn2K8TU5s/view?usp=share_link"
+                target="_blank"
+                >Power BI - Aprimoramento da Gestão | ENAP
+            </a>
+        </li>
+        <li>
+            <a
+                href="https://drive.google.com/file/d/1rMBa5ra60dgrfmYIL4tMD_w9HQUldL19/view?usp=sharing"
+                target="_blank">Latex | UFVJM</a
             >
         </li>
-         <li>
+        <li>
+            <a
+                href="https://drive.google.com/file/d/1LEDGuXmuENzT3zoUI7k6GXZAOMNs2Sua/view?usp=share_link"
+                target="_blank"
+                >Python | Udemy
+            </a>
+        </li>
+        <li>
             <a
                 href="https://drive.google.com/file/d/1a00VWy4BRTNK-G-N3ac6oJsjMhIcLk4l/view?usp=sharing"
-                target="_blank">R para Ciência de Dados | UFBA
-                </a
-            >
+                target="_blank"
+                >R para Ciência de Dados | UFBA
+            </a>
         </li>
     </ul>
 
-    <div class="mb-5">
-        <div class="text-3xl w-full font-bold">Skills</div>
-    </div>
-
-    <ul class="list-disc md:columns-5 columns-2 mx-6">
-        <li>Gestão Ágil</li>
-        <li>HTML & CSS</li>
-        <li>Bootstrap 5</li>
-        <li>JavaScript</li>
-        <li>MySQL</li>
-        <li>PHP</li>
-        <li>Laravel 10</li>
-        <li>Data Science</li>
-        <li>Power BI</li>
-        <li>Python & R</li>
-    </ul>
 </BaseLayout>
