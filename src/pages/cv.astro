@@ -1,6 +1,7 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import TimeLineElement from "../components/cv/TimeLine.astro";
+import SobreMim from "@components/SobreMim.astro";
 ---
 
 <BaseLayout title="Sobre Mim" sideBarActiveItemID="cv">
@@ -9,31 +10,23 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
     </div>
 
     <div class="mb-4 text-justify">
-        Prazer, Bernardo Nogueira, 22 anos, brasileiro, atua como Tecnólogo em
-        Gestão de Sistema de Informação na Fundação Estatal Saúde da Família.
-        Graduando em Licenciatura em Matemática pelo IFBA. Formado em Análise e
-        Desenvolvimento de Sistemas pela UniFatecie. Tecnólogo em Gastronomia
-        pela UNIFACS (2022). Tenho paixão por trabalhar em equipe, colaborar com
-        colegas e clientes, e estou animado para contribuir em projetos
-        desafiadores.
+        <SobreMim />
     </div>
     <div class="mb-5">
         <div class="text-3xl w-full font-bold">Skills</div>
     </div>
 
     <ul class="list-disc md:columns-5 columns-2 mx-6 mt-0">
-        <li>Gestão Ágil</li>
-        <li>HTML & CSS</li>
-        <li>Bootstrap 5</li>
-        <li>JavaScript</li>
-        <li>MySQL</li>
-        <li>PHP</li>
-        <li>Laravel 10</li>
-        <li>Data Science</li>
+        <li>Python</li>
+        <li>R</li>
         <li>Power BI</li>
-        <li>Python & R</li>
+        <li>Latex</li>
+        <li>Tailwind CSS</li>
+        <li>PHP</li>
+        <li>Bootstrap 5</li>
+        <li>HTML/CSS/JS</li>
     </ul>
-<br>
+    <br />
 
     <div class="mb-5">
         <div class="text-3xl w-full font-bold">Formação Acadêmica</div>
@@ -50,11 +43,15 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
         />
         <TimeLineElement
             title="Licenciatura em Matemática"
-            subtitle="2020 - 2025, no IFBA, Salavador, Bahia"
+            subtitle="2020, no IFBA, Salavador, Bahia"
         />
         <TimeLineElement
             title="Tecnólogo em Analise e Desenvolvimento de Sistemas"
             subtitle="2022 - 2024, na UniFatecie, Salavador, Bahia"
+        />
+        <TimeLineElement
+            title="Especialização em Ciência de Dados Aplicada à Saúde"
+            subtitle="2024, na PUC Minas"
         />
     </div>
 
@@ -189,5 +186,4 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
             </a>
         </li>
     </ul>
-
 </BaseLayout>

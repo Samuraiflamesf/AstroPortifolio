@@ -3,6 +3,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import HorizontalCard from "../components/HorizontalCard.astro";
 import { getCollection } from "astro:content";
 import createSlug from "../lib/createSlug";
+import SobreMim from "@components/SobreMim.astro";
 
 const posts = (await getCollection("blog")).sort(
     (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
@@ -15,7 +16,9 @@ const last_posts = posts.slice(0, 5);
     <div class="pb-12 mt-5">
         <div class="text-xl py-1">Hello 👋</div>
         <div class="text-5xl font-bold">Prazer, Bernardo Nogueira!</div>
-        <div class="text-3xl py-3 font-bold">Analista de Requisitos</div>
+        <!-- 
+            <div class="text-3xl py-3 font-bold">Analista de Requisitos</div>
+        -->
         <div class="py-2">
             <div class="text-sm breadcrumbs mt-0 pt-0">
                 <ul>
@@ -44,30 +47,25 @@ const last_posts = posts.slice(0, 5);
                 </ul>
             </div>
             <text class="text-lg">
-                Sou um profissional de tecnologia com habilidades em Power BI,
-                R, Python, HTML, CSS, Bootstrap 5, JavaScript, MySql, PHP e
-                Laravel. Estou sempre em busca de novas maneiras de aplicar
-                minhas habilidades e conhecimentos em soluções inovadoras,
-                exemplo esté site é feito em "Astro". Tenho paixão por trabalhar
-                em equipe, colaborar com colegas e clientes, e estou animado
-                para contribuir em projetos desafiadores.
+                <SobreMim />
             </text>
         </div>
         <a
             href="https://github.com/Samuraiflamesf/AstroPortifolio"
             target="_blank"
-            class="btn btn-outline btn-wide"
+            class="btn btn-outline"
         >
             Git do Projeto
+        </a>
+        <a href="/public/CV.pdf" target="_blank" class="btn btn-warning">
+            Currículo
         </a>
     </div>
 
     <div>
         <div class="text-3xl w-full font-bold mb-2">
-            <a
-                href="/project/"
-            >
-                Ultimos Projetos {"</>"}
+            <a href="/project/">
+                Projetos {"</>"}
             </a>
         </div>
     </div>
